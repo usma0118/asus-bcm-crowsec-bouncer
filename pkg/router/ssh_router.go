@@ -10,7 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yourname/crowdsec-asus-sync/pkg/crowdsec"
+	"github.com/usma0118/asus-bcm-crowsec-bouncer/pkg/crowdsec"
+
 	"go.uber.org/zap"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/knownhosts"

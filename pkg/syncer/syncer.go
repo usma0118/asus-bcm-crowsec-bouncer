@@ -4,9 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/yourname/crowdsec-asus-sync/pkg/crowdsec"
-	"github.com/yourname/crowdsec-asus-sync/pkg/health"
-	"github.com/yourname/crowdsec-asus-sync/pkg/router"
+	"github.com/usma0118/asus-bcm-crowsec-bouncer/pkg/crowdsec"
+	"github.com/usma0118/asus-bcm-crowsec-bouncer/pkg/health"
+	"github.com/usma0118/asus-bcm-crowsec-bouncer/pkg/router"
+
 	"go.uber.org/zap"
 )
 
