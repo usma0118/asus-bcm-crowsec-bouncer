@@ -129,7 +129,7 @@ env:
 
 🛠️ Developer Setup
 1. Clone repo
-git clone https://github.com/yourname/crowdsec-asus-sync
+git clone https://github.com/usma0118/asus-bcm-crowsec-bouncer
 cd crowdsec-asus-sync
 
 2. Build binary
@@ -142,7 +142,7 @@ BOUNCER_CONFIG=./crowdsec-custom-bouncer.yaml \
 ./router-sync
 
 🐳 Docker Build
-docker build -t yourname/crowdsec-asus-sync .
+docker build -t crowdsec-asus-sync .
 
 .
 

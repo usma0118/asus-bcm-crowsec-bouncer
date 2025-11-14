@@ -1,4 +1,4 @@
-module github.com/yourname/crowdsec-asus-sync
+module github.com/usma0118/asus-bcm-crowsec-bouncer
 
 go 1.22
 
