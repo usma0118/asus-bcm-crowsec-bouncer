@@ -26,18 +26,15 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build \
 FROM ghcr.io/crowdsecurity/custom-bouncer:latest
 
 # Install tini + openssh-client
-USER root
+USER nobody:nobody
 RUN apk update && \
-    apk add --no-cache tini openssh-client && \
-    mkdir -p /config/.ssh && \
-    chown -R 1000:1000 /config
+    apk add --no-cache tini openssh-client
 
 # Copy Go binary
 COPY --from=builder /out/router-sync /usr/local/bin/router-sync
 
 # tini = PID1
 ENTRYPOINT ["/sbin/tini", "--"]
-USER nobody:nobody
 # Run the sync daemon
 CMD ["/usr/local/bin/router-sync"]
 
